@@ -11,10 +11,10 @@
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'id'); ?>
-		<?php echo $form->textField($model,'id'); ?>
-	</div>
+<!--	<div class="row">-->
+<!--		--><?php //echo $form->label($model,'id'); ?>
+<!--		--><?php //echo $form->textField($model,'id'); ?>
+<!--	</div>-->
 
 	<div class="row">
 		<?php echo $form->label($model,'title'); ?>
@@ -26,10 +26,10 @@
 		<?php echo $form->textField($model,'content',array('size'=>60,'maxlength'=>255)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'created_at'); ?>
-		<?php echo $form->textField($model,'created_at'); ?>
-	</div>
+<!--	<div class="row">-->
+<!--		--><?php //echo $form->label($model,'created_at'); ?>
+<!--		--><?php //echo $form->textField($model,'created_at'); ?>
+<!--	</div>-->
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>

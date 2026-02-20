@@ -35,5 +35,11 @@ class Post extends CActiveRecord
             'criteria'=>$criteria,
         ));
     }
+    public  function relations()
+    {
+        return array(
+            'user' => array(self::BELONGS_TO, 'User', 'user_id'),
+        );
+    }
 
 }

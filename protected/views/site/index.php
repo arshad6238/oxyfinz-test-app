@@ -13,6 +13,10 @@ $this->pageTitle=Yii::app()->name;
 	<li>View file: <code><?php echo __FILE__; ?></code></li>
 	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
 </ul>
+<p> <a href="/blog/index">Blog</a></p>
+<p> <a href="/signup/signup">Signup</a></p>
+<p> <a href="/post/index">Post</a></p>
+<p> <a href="/comment/view">Comment</a></p>
 
 <p>For more details on how to further develop this application, please read
 the <a href="http://www.yiiframework.com/doc/">documentation</a>.

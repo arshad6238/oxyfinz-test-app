@@ -1379,3 +1379,1208 @@ in /Users/sagaranumala/Documents/Test/myapp/index.php (18)
 2026/02/19 08:06:03 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
 in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (96)
 in /Users/sagaranumala/Documents/Test/myapp/index.php (18)
+2026/02/19 08:43:15 [error] [php] Invalid argument supplied for foreach() (/Users/sagaranumala/Documents/Test/myapp/protected/views/userPost/index.php:3)
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(872): UserPostController->renderFile()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(785): UserPostController->renderPartial()
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/UserPostController.php(6): UserPostController->render()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): UserPostController->actionIndex()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): UserPostController->runAction()
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): UserPostController->runActionWithFilters()
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): UserPostController->run()
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(18): CWebApplication->run()
+REQUEST_URI=/userPost/index
+in /Users/sagaranumala/Documents/Test/myapp/protected/views/userPost/index.php (3)
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/UserPostController.php (6)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (18)
+2026/02/19 10:18:03 [error] [exception.CException] CException: BlogController cannot find the requested view "index". in /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php:881
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(785): CController->renderPartial('index', Array, true)
+#1 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/BlogController.php(30): CController->render('index', Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): BlogController->actionIndex()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/index')
+#13 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/sagaranumala/Documents/Test/myapp/index.php(18): CApplication->run()
+#15 {main}
+REQUEST_URI=/blog/index
+---
+2026/02/19 10:18:24 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php:337
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/view')
+#10 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Users/sagaranumala/Documents/Test/myapp/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/view
+---
+2026/02/19 10:18:29 [error] [exception.CException] CException: BlogController cannot find the requested view "create". in /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php:881
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(785): CController->renderPartial('create', Array, true)
+#1 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/BlogController.php(45): CController->render('create', Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): BlogController->actionCreate()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/create')
+#13 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/sagaranumala/Documents/Test/myapp/index.php(18): CApplication->run()
+#15 {main}
+REQUEST_URI=/blog/create
+---
+2026/02/19 10:18:44 [error] [exception.CException] CException: BlogController cannot find the requested view "index". in /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php:881
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(785): CController->renderPartial('index', Array, true)
+#1 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/BlogController.php(30): CController->render('index', Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): BlogController->actionIndex()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/index')
+#13 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/sagaranumala/Documents/Test/myapp/index.php(18): CApplication->run()
+#15 {main}
+REQUEST_URI=/blog/index
+---
+2026/02/19 10:19:52 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php:337
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/view')
+#10 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Users/sagaranumala/Documents/Test/myapp/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/view
+---
+2026/02/19 10:20:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`arshad`.`blog`, CONSTRAINT `blog_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)). The SQL statement executed was: INSERT INTO `blog` (`title`, `content`, `user_id`) VALUES (:yp0, :yp1, :yp2).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/BlogController.php (43)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (18)
+2026/02/19 10:20:27 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`arshad`.`blog`, CONSTRAINT `blog_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)). The SQL statement executed was: INSERT INTO `blog` (`title`, `content`, `user_id`) VALUES (:yp0, :yp1, :yp2) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/BlogController.php(43): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): BlogController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/create')
+#14 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Users/sagaranumala/Documents/Test/myapp/index.php(18): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/create
+HTTP_REFERER=http://localhost:8000/blog/create
+---
+2026/02/19 10:26:31 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "blo0". in /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blo0')
+#1 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/sagaranumala/Documents/Test/myapp/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/blo0
+---
+2026/02/19 10:30:46 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "blog". in /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php:486
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(270): CController->missingAction('blog')
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('blog')
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/blog/index')
+#3 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/blog/index
+HTTP_REFERER=http://localhost:8000/site/index
+---
+2026/02/19 10:30:54 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "blog". in /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php:486
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(270): CController->missingAction('blog')
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('blog')
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/blog/index')
+#3 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/blog/index
+HTTP_REFERER=http://localhost:8000/site/index
+---
+2026/02/19 10:30:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "blog". in /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php:486
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(270): CController->missingAction('blog')
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('blog')
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/blog/index')
+#3 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/blog/index
+HTTP_REFERER=http://localhost:8000/site/index
+---
+2026/02/19 10:48:16 [error] [exception.ParseError] ParseError: syntax error, unexpected ';' in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/BlogController.php:44
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('create/')
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/create')
+#2 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#3 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#4 {main}
+REQUEST_URI=/blog/create
+HTTP_REFERER=http://localhost:8000/blog/index
+---
+2026/02/19 10:49:43 [warning] [application] Failed to set unsafe attribute "category" of "Blog".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/BlogController.php (42)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/19 10:50:56 [warning] [application] Failed to set unsafe attribute "category" of "Blog".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/BlogController.php (42)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/19 11:00:25 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /Users/sagaranumala/Documents/Test/yii/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/admin')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/admin
+HTTP_REFERER=http://localhost:8000/blog/index
+---
+2026/02/19 11:03:15 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /Users/sagaranumala/Documents/Test/yii/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/admin')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/admin
+HTTP_REFERER=http://localhost:8000/blog/index
+---
+2026/02/19 11:35:26 [error] [php] move_uploaded_file(/Users/sagaranumala/Documents/Test/myapp/uploads/6996f57e8cc66_icon_play-store.png): failed to open stream: No such file or directory (/Users/sagaranumala/Documents/Test/yii/framework/web/CUploadedFile.php:201)
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): BlogController->actionCreate()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(134): BlogController->runAction()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CInlineFilter.php(58): BlogController->filterAccessControl()
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): BlogController->runActionWithFilters()
+#9 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): BlogController->run()
+#10 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CWebApplication->run()
+REQUEST_URI=/blog/create
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/BlogController.php (56)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/19 11:36:00 [error] [php] move_uploaded_file(/Users/sagaranumala/Documents/Test/myapp/uploads/6996f5a0103fb_icon_play-store.png): failed to open stream: No such file or directory (/Users/sagaranumala/Documents/Test/yii/framework/web/CUploadedFile.php:201)
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): BlogController->actionCreate()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(134): BlogController->runAction()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CInlineFilter.php(58): BlogController->filterAccessControl()
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): BlogController->runActionWithFilters()
+#9 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): BlogController->run()
+#10 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CWebApplication->run()
+REQUEST_URI=/blog/create
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/BlogController.php (57)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 05:31:50 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Connection refused in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(639): CApplication->getDb()
+#5 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(2389): CActiveRecord->getDbConnection()
+#6 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(Blog))
+#7 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/BlogController.php(29): CActiveRecord->__construct('search')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): BlogController->actionIndex()
+#10 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/index')
+#20 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index
+HTTP_REFERER=http://localhost:8000/site/index
+---
+2026/02/20 06:03:50 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (72)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:03:50 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `post` (`title`, `content`) VALUES (:yp0, :yp1).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (73)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:03:50 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `post` (`title`, `content`) VALUES (:yp0, :yp1) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php(73): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#14 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/post/create
+HTTP_REFERER=http://localhost:8000/post/create
+---
+2026/02/20 06:04:29 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (72)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:04:59 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:04:59 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:03 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:03 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:03 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:03 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:03 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:03 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:19 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:19 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:22 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:22 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:30 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:30 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:30 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:30 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:34 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:34 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:36 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:36 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:37 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:37 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:37 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:37 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:37 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:37 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:47 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:47 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:47 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:47 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:47 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:47 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:48 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:05:48 [warning] [application] Failed to set unsafe attribute "created_at" of "Post".
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/PostController.php (140)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 06:28:52 [error] [exception.Error] Error: Class 'PHPMailer' not found in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php:16
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): SignupController->actionSignup()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('signup')
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('signup/signup')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/signup/signup
+HTTP_REFERER=http://localhost:8000/signup/signup
+---
+2026/02/20 06:29:27 [error] [exception.Error] Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php:18
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): SignupController->actionSignup()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('signup')
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('signup/signup')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/signup/signup
+HTTP_REFERER=http://localhost:8000/signup/signup
+---
+2026/02/20 06:31:14 [error] [exception.Error] Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php:58
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): SignupController->actionMailTest()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('mailTest')
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('signup/mailTest')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/signup/mailTest
+---
+2026/02/20 06:31:38 [error] [exception.Error] Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php:59
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): SignupController->actionMailTest()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('mailTest')
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('signup/mailTest')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/signup/mailTest
+---
+2026/02/20 06:35:40 [error] [exception.Error] Error: Class 'PHPMailer' not found in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php:57
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): SignupController->actionMailTest()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('mailTest')
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('signup/mailTest')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/signup/mailTest
+---
+2026/02/20 06:35:45 [error] [exception.Error] Error: Class 'PHPMailer' not found in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php:57
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): SignupController->actionMailTest()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('mailTest')
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('signup/mailTest')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/signup/mailTest
+---
+2026/02/20 06:35:45 [error] [exception.Error] Error: Class 'PHPMailer' not found in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php:57
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): SignupController->actionMailTest()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('mailTest')
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('signup/mailTest')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/signup/mailTest
+---
+2026/02/20 06:35:46 [error] [exception.Error] Error: Class 'PHPMailer' not found in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php:57
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): SignupController->actionMailTest()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('mailTest')
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('signup/mailTest')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/signup/mailTest
+---
+2026/02/20 06:35:46 [error] [exception.Error] Error: Class 'PHPMailer' not found in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php:57
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): SignupController->actionMailTest()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('mailTest')
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('signup/mailTest')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/signup/mailTest
+---
+2026/02/20 06:35:46 [error] [exception.Error] Error: Class 'PHPMailer' not found in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php:57
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): SignupController->actionMailTest()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('mailTest')
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('signup/mailTest')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/signup/mailTest
+---
+2026/02/20 06:37:02 [error] [exception.Error] Error: Class 'PHPMailer' not found in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php:59
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): SignupController->actionMailTest()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('mailTest')
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('signup/mailTest')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/signup/mailTest
+---
+2026/02/20 06:37:03 [error] [exception.Error] Error: Class 'PHPMailer' not found in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php:59
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): SignupController->actionMailTest()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('mailTest')
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('signup/mailTest')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/signup/mailTest
+---
+2026/02/20 06:37:11 [error] [exception.Error] Error: Class 'PHPMailer' not found in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php:59
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): SignupController->actionMailTest()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('mailTest')
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('signup/mailTest')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/signup/mailTest
+---
+2026/02/20 06:39:11 [error] [php] include(PHPMailer.php): failed to open stream: No such file or directory (/Users/sagaranumala/Documents/Test/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php(56): spl_autoload_call()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): SignupController->actionMailTest()
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): SignupController->runAction()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): SignupController->runActionWithFilters()
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): SignupController->run()
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CWebApplication->run()
+REQUEST_URI=/signup/mailTest
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php (56)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:55:28 [error] [exception.Error] Error: Call to undefined method CFormModel::model() in /Users/sagaranumala/Documents/Test/myapp/protected/models/Comment.php:6
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(9): Comment::model()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionView()
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/view')
+#7 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#9 {main}
+REQUEST_URI=/comment/view
+---
+2026/02/20 07:55:50 [error] [exception.CException] CException: Property "Comment.message" is not defined. in /Users/sagaranumala/Documents/Test/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('message')
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/helpers/CHtml.php(2747): CActiveRecord->__get('message')
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/helpers/CHtml.php(1840): CHtml::resolveValue(Object(Comment), 'message')
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/widgets/CActiveForm.php(853): CHtml::activeTextArea(Object(Comment), 'message', Array)
+#4 /Users/sagaranumala/Documents/Test/myapp/protected/views/comment/view.php(46): CActiveForm->textArea(Object(Comment), 'message', Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CBaseController.php(126): require('/Users/sagaranu...')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/sagaranu...', Array, true)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/sagaranu...', Array, true)
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(785): CController->renderPartial('view', Array, true)
+#9 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(15): CController->render('view', Array)
+#10 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionView()
+#11 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/view')
+#16 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#18 {main}
+REQUEST_URI=/comment/view
+---
+2026/02/20 07:55:51 [error] [exception.CException] CException: Property "Comment.message" is not defined. in /Users/sagaranumala/Documents/Test/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('message')
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/helpers/CHtml.php(2747): CActiveRecord->__get('message')
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/helpers/CHtml.php(1840): CHtml::resolveValue(Object(Comment), 'message')
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/widgets/CActiveForm.php(853): CHtml::activeTextArea(Object(Comment), 'message', Array)
+#4 /Users/sagaranumala/Documents/Test/myapp/protected/views/comment/view.php(46): CActiveForm->textArea(Object(Comment), 'message', Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CBaseController.php(126): require('/Users/sagaranu...')
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/sagaranu...', Array, true)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/sagaranu...', Array, true)
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(785): CController->renderPartial('view', Array, true)
+#9 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(15): CController->render('view', Array)
+#10 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionView()
+#11 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/view')
+#16 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#18 {main}
+REQUEST_URI=/comment/view
+---
+2026/02/20 07:57:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:57:47 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:57:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:57:51 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:57:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:57:51 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:57:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:57:51 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:57:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:57:52 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:57:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:57:52 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:57:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:57:52 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:57:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:57:57 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:57:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:57:58 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:57:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:57:58 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:57:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:57:58 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:58:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:58:15 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:58:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:58:15 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:58:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:58:15 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:58:19 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:58:19 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:58:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:58:20 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:58:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:58:20 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:58:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:58:20 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:58:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:58:24 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 07:58:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (30)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 07:58:24 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(30): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 08:03:54 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php (31)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 08:03:54 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'blog_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `comment` (`name`, `email`, `message`, `created_at`) VALUES (:yp0, :yp1, :yp2, :yp3) in /Users/sagaranumala/Documents/Test/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/sagaranumala/Documents/Test/yii/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/CommentController.php(31): CActiveRecord->save()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/comment/create
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 08:12:06 [error] [exception.CHttpException.400] CHttpException: The CSRF token could not be verified. in /Users/sagaranumala/Documents/Test/yii/framework/web/CHttpRequest.php:1362
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/base/CComponent.php(561): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(212): CComponent->raiseEvent('onbeginrequest', Object(CEvent))
+#2 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(183): CApplication->onBeginRequest(Object(CEvent))
+#3 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#4 {main}
+REQUEST_URI=/comment/search
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 08:12:11 [error] [exception.CHttpException.400] CHttpException: The CSRF token could not be verified. in /Users/sagaranumala/Documents/Test/yii/framework/web/CHttpRequest.php:1362
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/base/CComponent.php(561): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(212): CComponent->raiseEvent('onbeginrequest', Object(CEvent))
+#2 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(183): CApplication->onBeginRequest(Object(CEvent))
+#3 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#4 {main}
+REQUEST_URI=/comment/search
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 08:12:18 [error] [exception.CHttpException.400] CHttpException: The CSRF token could not be verified. in /Users/sagaranumala/Documents/Test/yii/framework/web/CHttpRequest.php:1362
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/base/CComponent.php(561): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(212): CComponent->raiseEvent('onbeginrequest', Object(CEvent))
+#2 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(183): CApplication->onBeginRequest(Object(CEvent))
+#3 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#4 {main}
+REQUEST_URI=/comment/search
+HTTP_REFERER=http://localhost:8000/comment/view
+---
+2026/02/20 10:00:43 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /Users/sagaranumala/Documents/Test/yii/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/delete')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/delete?ajax=blog-grid&id=21
+HTTP_REFERER=http://localhost:8000/blog/index
+---
+2026/02/20 10:01:12 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /Users/sagaranumala/Documents/Test/yii/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/delete')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/delete?ajax=blog-grid&id=21
+HTTP_REFERER=http://localhost:8000/blog/index
+---
+2026/02/20 10:01:29 [error] [application] Mail error: Invalid address:  (addAnAddress to): sdggds
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php (42)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 10:02:09 [error] [application] Mail error: Invalid address:  (addAnAddress to): eytb
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php (42)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 10:07:53 [error] [application] Mail error: Invalid address:  (addAnAddress to): 
+in /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php (42)
+in /Users/sagaranumala/Documents/Test/myapp/index.php (17)
+2026/02/20 10:10:02 [error] [exception.CException] CException: Property "CRegularExpressionValidator.0" is not defined. in /Users/sagaranumala/Documents/Test/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/validators/CValidator.php(177): CComponent->__set('0', 'required')
+#1 /Users/sagaranumala/Documents/Test/yii/framework/base/CModel.php(287): CValidator::createValidator(0, Object(SignupForm), Array, Array)
+#2 /Users/sagaranumala/Documents/Test/yii/framework/base/CModel.php(260): CModel->createValidators()
+#3 /Users/sagaranumala/Documents/Test/yii/framework/base/CModel.php(304): CModel->getValidators('username')
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/helpers/CHtml.php(1520): CModel->isAttributeRequired('username')
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/widgets/CActiveForm.php(600): CHtml::activeLabelEx(Object(SignupForm), 'username', Array)
+#6 /Users/sagaranumala/Documents/Test/myapp/protected/views/signup/signup.php(17): CActiveForm->labelEx(Object(SignupForm), 'username')
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CBaseController.php(126): require('/Users/sagaranu...')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/sagaranu...', Array, true)
+#9 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/sagaranu...', Array, true)
+#10 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(785): CController->renderPartial('signup', Array, true)
+#11 /Users/sagaranumala/Documents/Test/myapp/protected/controllers/SignupController.php(51): CController->render('signup', Array)
+#12 /Users/sagaranumala/Documents/Test/yii/framework/web/actions/CInlineAction.php(49): SignupController->actionSignup()
+#13 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#15 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('signup')
+#17 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('signup/signup')
+#18 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#20 {main}
+REQUEST_URI=/signup/signup
+HTTP_REFERER=http://localhost:8000/
+---
+2026/02/20 10:11:17 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /Users/sagaranumala/Documents/Test/yii/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /Users/sagaranumala/Documents/Test/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/sagaranumala/Documents/Test/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/sagaranumala/Documents/Test/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /Users/sagaranumala/Documents/Test/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('blog/delete')
+#9 /Users/sagaranumala/Documents/Test/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/sagaranumala/Documents/Test/myapp/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/delete?ajax=blog-grid&id=21
+HTTP_REFERER=http://localhost:8000/blog/index
+---

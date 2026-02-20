@@ -13,6 +13,5 @@ defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 if (version_compare(PHP_VERSION, '7.4', '>=')) {
     error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE);
 }
-
 require_once($yii);
 Yii::createWebApplication($config)->run();

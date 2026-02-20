@@ -6,6 +6,10 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
+    'language' => 'en',
+    'sourceLanguage' => 'en',
+
+
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
 
@@ -16,6 +20,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+        'application.extensions.phpmailer.src.*',
 	),
 
 	'modules'=>array(
@@ -32,7 +37,9 @@ return array(
 
 	// application components
 	'components'=>array(
-
+        'session' => array(
+            'autoStart' => true,
+        ),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
@@ -51,6 +58,10 @@ return array(
             'username' => 'root',
             'password' => 'root',   // your MySQL password
             'charset' => 'utf8',
+        ),
+        'request' => array(
+            'enableCsrfValidation' => true,
+            'enableCookieValidation' => true,
         ),
 
 		// uncomment the following to enable URLs in path-format
@@ -96,5 +107,8 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
-	),
+
+            'smtpUser' => 'arshadalikalathingal@gmail.com',
+            'smtpPass' => 'bpkttmybfboslqwd',
+        ),
 );
